@@ -1,6 +1,15 @@
 # 🎯 Challengely
 
 A modern iOS habit-building app with chat assistant built for real-world impact. Experience the power of SwiftUI + The Composable Architecture.
+
+## 📱 App Preview
+
+<p align="center">
+  <img src="https://github.com/thisisaman01/Challengely/blob/main/onboarding-demo.gif?raw=true" alt="Challengely Onboarding Demo" width="300"/>
+</p>
+
+---
+
 ## ⚡ Features
 
 ### 🌟 Smart Onboarding
