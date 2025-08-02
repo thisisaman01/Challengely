@@ -2,19 +2,21 @@
 //  ChallengelyApp.swift
 //  Challengely
 //
-//  Created by Admin on 01/08/25.
+//  Created by AMAN K.A on 01/08/25.
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct ChallengelyApp: App {
-    let persistenceController = PersistenceController.shared
-
+    static let store = Store(initialState: AppCore.State()) {
+        AppCore()
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            ContentView(store: ChallengelyApp.store)
         }
     }
 }
